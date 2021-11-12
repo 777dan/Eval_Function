@@ -24,9 +24,11 @@ function cube(x) {
 }
 
 let expr = prompt("input expression for function");
-let f;
-f = function (x) { return x * expr; };
-eval(f);
+// let f;
+let strF = "f = function (x) {return " + expr + ";}";
+eval(strF);
+// f = function (x) { return x * expr; };
+// eval(f);
 //alert(functionStr);
 // let ff = [quadratic, cube];
 printTable(-4, 4, 1, f);
